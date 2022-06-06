@@ -22,17 +22,23 @@ def hobbiesJuli():
 def hobbiesMaansi():
     return render_template('/maansi/hobbies-Maansi.html', title="Josh's Hobbies", url=os.getenv("URL"))
 
-@app.route('/work-Josh')
+
+
+
+@app.route('/work-josh')
 def workJosh():
-    return render_template('/joshua/work-experience-Josh.html', title="Work Experience", url=os.getenv("URL"))
+    return render_template('work.html', company ="Cooper Safety Supply", role = "Warehouse Production Assistant", task = " He was responsible for assisting in production based tasks around the warehouse. These tasks included but were not limited to unpacking and packing up items, staging hard hats and other gear for production, heat pressing logos onto gloves,  creating boxes to store items, and labeling items for shipping and loading them unto vehicles.",  url=os.getenv("URL"))
 
-@app.route('/work-Juli')
+@app.route('/work-jul')
 def workJuli():
-    return render_template('/juliette/work-experience-Juli.html', title="Work Experience", url=os.getenv("URL"))
+    return render_template('work.html', company = "Stocate", role = "Full Stack Developer Volunteer", task = "- Frontend development based on React, code gosted on Github, web server running on Google cloud.", task2 = "- Took part in stocate.com project, a sustainability focused online browsing platform responsible for implementation and testing.", url=os.getenv("URL"))
 
-@app.route('/work-Maansi')
+@app.route('/work-maansi')
 def workMaansi():
-    return render_template('/maansi/work-experience-Maansi.html', title="Work Experience", url=os.getenv("URL"))
+    return render_template('work.html', company = "Atlas Digital",role = "Tech Consultant", task = "Developed an open source project in Python to predict housing prices with about 90% accuracy using machine learning.", url=os.getenv("URL"))
+
+
+
 
 @app.route('/jul-travel')
 def julTravel():
@@ -45,6 +51,9 @@ def manTravel():
 @app.route('/joshua-travel')
 def joshTravel():
     return render_template('/joshua/josh-travel.html', url=os.getenv("URL"))
+
+
+
 
 @app.route('/jul-education')
 def julEducation():
