@@ -14,9 +14,11 @@
                 <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
+                <a href="#">About Me</a>
+                <a href="#">Work Experiences</a>
+                <a href="#">Hobbies</a>
+                <a href="{{ url_for('joshEducation') }}">Education</a>
                 <a href="{{ url_for('joshTravel') }}">Travels</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
                 </div>
             </div>
         </li>
@@ -26,9 +28,11 @@
                 <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                <a href="{{ url_for('manTravel') }}">Travels</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                    <a href="#">About Me</a>
+                    <a href="#">Work Experiences</a>
+                    <a href="#">Hobbies</a>
+                    <a href="{{ url_for('manEducation') }}">Education</a>
+                    <a href="{{ url_for('manTravel') }}">Travels</a>
                 </div>
             </div>
         </li>
@@ -38,15 +42,15 @@
                 <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                <a href="{{ url_for('julTravel') }}">Travels</a>
-                <a href="{{ url_for('julEducation') }}">Education</a>
-                <a href="#">Link 3</a>
+                    <a href="#">About Me</a>
+                    <a href="#">Work Experiences</a>
+                    <a href="#">Hobbies</a>
+                    <a href="{{ url_for('julEducation') }}">Education</a>
+                    <a href="{{ url_for('julTravel') }}">Travels</a>
                 </div>
             </div>
         </li>
-        <!-- <li class="nav-content">
-            <a href="{{ url_for('julTravel') }}">Juliette</a>
-        </li> -->
+
         <li class="nav-content">
             <a>Contact Us</a>
         </li>
