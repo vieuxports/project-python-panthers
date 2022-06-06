@@ -17,7 +17,6 @@ def hobbiesJosh():
 def hobbiesJuli():
     return render_template('/juliette/hobbies-Juli.html', title="Josh's Hobbies", url=os.getenv("URL"))
 
-
 @app.route('/hobbies-maansi')
 def hobbiesMaansi():
     return render_template('/maansi/hobbies-Maansi.html', title="Josh's Hobbies", url=os.getenv("URL"))
@@ -34,6 +33,7 @@ def workJuli():
 def workMaansi():
     return render_template('/maansi/work-experience-Maansi.html', title="Work Experience", url=os.getenv("URL"))
 
+# Travel pages for each team member
 @app.route('/jul-travel')
 def julTravel():
     return render_template('/juliette/jul-travel.html', url=os.getenv("URL"))
@@ -46,6 +46,7 @@ def manTravel():
 def joshTravel():
     return render_template('/joshua/josh-travel.html', url=os.getenv("URL"))
 
+# Education pages for each team member using a jinja template (education.html)
 @app.route('/jul-education')
 def julEducation():
     return render_template('education.html', uni="McGill University", fact="My school just celebrated its bicentennial", pic1='/img/mcgill1.jpg',pic2='img/mcgill.jpeg', map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.2627839218294!2d-73.57933978516613!3d45.50478843875644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a46510f9635%3A0xdde4da9200a4ae74!2sMcGill%20University!5e0!3m2!1sen!2sca!4v1654372237772!5m2!1sen!2sca",url=os.getenv("URL"))
