@@ -11,16 +11,16 @@ def index():
 
 @app.route('/hobbies-josh')
 def hobbiesJosh():
-    return render_template('/joshua/hobbies-Josh.html', title="Josh's Hobbies", url=os.getenv("URL"))
+    return render_template('/hobbies.html', person = "Josh's Hobbies", hobby1 = "Video Games", hobby1des = "Josh likes to play video games like Lost Ark.", img1 = "./static/img/Lost Ark.png", hobby2 = "Sneakers", hobby2des = "He's also into sneakers. One of his favorites is the Jordan 3 Red Cemment shown below.", img2 = "./static/img/Jordan3.jpg" , hobby3 = "PC Builds", hobby3des = "Additionally, he also likes to research computer components and put them together. Below is a picture of the insides of a PC he be built for his parents with one of his brothers.", img3 = "./static/img/Pc build.jpg" , url=os.getenv("URL"))
 
 @app.route('/hobbies-jul')
 def hobbiesJuli():
-    return render_template('/juliette/hobbies-Juli.html', title="Josh's Hobbies", url=os.getenv("URL"))
+    return render_template('/hobbies.html', person = "Juli's Hobbies", hobby1 = "Skiing", hobby1des = "One of Juli's hobbies is skiing." , img1 = "./static/img/Woman Skiing.jpg" , hobby2 = "Hiking", hobby2des = "Another one of Juli's hobbies is hiking.", img2 = "./static/img/Woman Hiking.jpg" , hobby3 = "Kdrama", hobby3des = "On top of that Juli likes to watch Kdrama as well." , img3 = "./static/img/Kdrama.png",  url=os.getenv("URL"))
 
 
 @app.route('/hobbies-maansi')
 def hobbiesMaansi():
-    return render_template('/maansi/hobbies-Maansi.html', title="Josh's Hobbies", url=os.getenv("URL"))
+    return render_template('/hobbies.html', person = "Maansi's Hobbies", hobby1 = "Cooking", hobby1des = "One of the things Maansi likes to do is cook." , img1 = "./static/img/Cooking.webp" , hobby2 = "Painting", hobby2des = "Another thing Maansi likes to do is create paintings." , img2 = "./static/img/Painting.jpg" , hobby3 = "Stranger Things", hobby3des = "Lastly, Maansi likes to watch shows like Stranger Things.", img3 = "/static/img/Stranger Things.webp" ,  url=os.getenv("URL"))
 
 
 
@@ -67,3 +67,13 @@ def joshEducation():
 @app.route('/maansi-education')
 def manEducation():
     return render_template('education.html', uni="University of Michigan", fact="I went to Novi High School in Novi, MI", pic1='/img/u-mich.jpg',pic2='img/u-mich2.jpg', map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2952.0224758585864!2d-83.74041278454628!3d42.278043579192584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883cae38e7de1701%3A0x5ba14e5178e997e3!2sUniversity%20of%20Michigan!5e0!3m2!1sen!2sca!4v1654400474561!5m2!1sen!2sca",url=os.getenv("URL"))
+
+
+
+
+
+
+
+
+
+
