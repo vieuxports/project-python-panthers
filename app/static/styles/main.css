@@ -31,17 +31,6 @@ body {
     display: inline-block;
 }
 
-/* .nav-list .nav-content .logo-touch-target {
-    display: inline-flex;
-    height: 60%;
-    width: 350px;
-}
-
-.nav-list .nav-content .nav-logo {
-    height: 60px;
-    margin: auto;
-} */
-
 .nav-logo {
     display: flex;
     align-items: center;
@@ -52,13 +41,6 @@ body {
     width: 200px;
 }
 
-/* .nav-content nav {
-    display: block;
-    width: 100%;
-    text-align: right;
-    padding-top: 0px;
-    padding-right: 0px;
-} */
 .nav-bar a {
     /* display: inline-block; */
     float: left;
@@ -79,11 +61,6 @@ body {
     background-color: #DAA520;
     color: white;
 }
-
-/* .nav-content {
-    background-color: #1C539F;
-    overflow: hidden;
-} */
 
 .logo {
     height: 60px;
@@ -204,4 +181,4 @@ body {
     height: 100%;
     width: 49%;
     border:none;
-   } 
+}
