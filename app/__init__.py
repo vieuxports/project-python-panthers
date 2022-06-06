@@ -40,6 +40,7 @@ def workMaansi():
 
 
 
+
 @app.route('/jul-travel')
 def julTravel():
     return render_template('/juliette/jul-travel.html', url=os.getenv("URL"))
