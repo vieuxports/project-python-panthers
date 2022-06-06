@@ -1,6 +1,61 @@
 <!DOCTYPE html>
 <html>
+   <!-- <head>
+        <title>Web Map Template - " style</title>
+        <meta charset="utf-8" />
+         <script type="module" src="https://geogratis.gc.ca/mapml/client/web-map/mapml-viewer.js" crossorigin></script> -->
+        <!-- <style>html {height:100%} *  {width: 100%} body,mapml-viewer {height:inherit}</style> -->
+        <!-- <style>
+            h1 {
+                color: gree
+            input {
+            float: left;
+            }
+
+            label {
+            margin-left: 30px;
+            display: block;
+            }
+        </style>
+   </head> -->
+   <head>{% include "main/header.html" %}</head>
+
     <body>
-        <h1>About Me</h1>
-    </body>
+        {% include "nav-bar/navbar.html" %}
+        <div class=map>
+           <!-- <h1>Hello I am map, let us play a game</h1> -->
+           <h2>Here is a list of all the places I have traveled to &#9992;&#65039;</h2>
+        </div>
+        <div>
+            <h3>&#127758; The Americas: Cuba, USA, Canada (Banff + Jasper, the East coast, currently reside in Montreal, Quebec)</h3>
+            <iframe style="width:33%;border:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801151.2380214683!2d-81.81242181386074!3d21.505300888352895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88cd49070f7a4cb5%3A0x798cf7529110a41a!2sCuba!5e0!3m2!1sen!2sca!4v1654321280717!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <iframe style="width:33%;border:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26360817.240440972!2d-113.74640110908233!3d36.24257412185098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sca!4v1654321294128!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <iframe style="width:33%;border:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18879821.064211894!2d-113.77000326047192!3d54.71550522181623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0d03d337cc6ad9%3A0x9968b72aa2438fa5!2sCanada!5e0!3m2!1sen!2sca!4v1654321808637!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div>
+            <h3>&#127759; Asia-Australia: China (fun fact: I lived there for 8 years), South Korea, Taiwan, Thailand, Singapore, Malaysia</h3>
+            <iframe style="width:33%;border:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26953245.23401032!2d86.02567786407822!3d34.44729739189612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31508e64e5c642c1%3A0x951daa7c349f366f!2sChina!5e0!3m2!1sen!2sca!4v1654321102371!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <iframe style="width:33%;border:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313554.267822143!2d125.62448678439299!3d35.80256399009677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356455ebcb11ba9b%3A0x91249b00ba88db4b!2sSouth%20Korea!5e0!3m2!1sen!2sca!4v1654321130765!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <iframe style="width:33%;border:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3747437.0227520433!2d117.83494667827635!3d23.474655601196794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346ef3065c07572f%3A0xe711f004bf9c5469!2sTaiwan!5e0!3m2!1sen!2sca!4v1654321149672!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <iframe style="width:33%;border:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7961373.17752399!2d96.98292125712723!3d13.010866465153788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304d8df747424db1%3A0x9ed72c880757e802!2sThailand!5e0!3m2!1sen!2sca!4v1654321219373!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <iframe style="width:33%;border:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255281.19036455176!2d103.70382127690081!3d1.3143393606578675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da11238a8b9375%3A0x887869cf52abf5c4!2sSingapore!5e0!3m2!1sen!2sca!4v1654321233420!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <iframe style="width:33%;border:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8149838.159920107!2d105.11022948729853!3d4.13885111411672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3034d3975f6730af%3A0x745969328211cd8!2sMalaysia!5e0!3m2!1sen!2sca!4v1654321245012!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+
+        <div>
+            <h3>&#127759; Europe-Africa: Italy</h3>
+
+            <iframe style="width:100%;border:none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6147018.782069635!2d8.212170836138284!3d41.21143960512775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d4fe82448dd203%3A0xe22cf55c24635e6f!2sItaly!5e0!3m2!1sen!2sca!4v1654321263216!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+   </body>
 </html>

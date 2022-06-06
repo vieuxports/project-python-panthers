@@ -38,3 +38,10 @@ def workMaansi():
 def julTravel():
     return render_template('/juliette/jul-travel.html', title="MLH Fellow", url=os.getenv("URL"))
 
+@app.route('/maansi-travel')
+def manTravel():
+    return render_template('maansi-travel.html', url=os.getenv("URL"))
+
+@app.route('/josh-travel')
+def joshTravel():
+    return render_template('josh-travel.html', url=os.getenv("URL"))
