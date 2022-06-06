@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+   <!-- <head>
+        <title>Web Map Template - " style</title>
+        <meta charset="utf-8" />
+         <script type="module" src="https://geogratis.gc.ca/mapml/client/web-map/mapml-viewer.js" crossorigin></script> -->
+        <!-- <style>html {height:100%} *  {width: 100%} body,mapml-viewer {height:inherit}</style> -->
+        <!-- <style>
+            h1 {
+                color: gree
+            input {
+            float: left;
+            }
+
+            label {
+            margin-left: 30px;
+            display: block;
+            }
+        </style>
+   </head> -->
+    <head>
+       {% include "main/header.html" %}
+    </head>
+
+    <body>
+        {% include "nav-bar/navbar.html" %}
+
+        <h2>Education</h2>
+        <p>Currently I am a student at {{ uni }}</p>
+        <p>Fun fact: {{ fact }}</p>
+
+        <h3>Here are some pictures of my school</h3>
+        <!-- <div class="row">
+            <div class="column">
+                <img class=img1 src="{{url_for('static', filename=pic1) }}">
+            </div>
+            <div class="column">
+                <img class=img2 src="{{url_for('static', filename=pic2) }}">
+            </div>
+
+          </div> -->
+        <div class=crop>
+            <img class=img1 src="{{url_for('static', filename=pic1) }}">
+            <img class=img2 src="{{url_for('static', filename=pic2) }}">
+        </div>
+        <!-- <img src="./static/img/mcgill.jpeg"> -->
+
+        <h3>Here is where my school is located at on the map</h3>
+        <!-- <div> {{ map }} </div> -->
+        <iframe style="width:100%;border:none" src="{{ map }}" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </body>
+</html>
