@@ -2,8 +2,8 @@
 pkill -f tmux 
 
 cd project-python-panthers
-pwd
-/usr/bin/git fetch && get reset origin/main --hard
+
+/usr/bin/git fetch && /usr/bin/git reset origin/main --hard
 
 source python3-virtualenv/bin/activate
 
