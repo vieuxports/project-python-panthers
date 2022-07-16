@@ -10,15 +10,15 @@ class AppTestCase(unittest.TestCase):
         response = self.client.get("/")
         assert response.status_code == 200
         html = response.get_data(as_text=True)
-        assert "<title>MLH Fellow</title>" in html
+        assert "<title>Python Panther Portfolio</title>" in html
 
     def test_timeline(self):
         response = self.client.get("/api/timeline_post")
         assert response.status_code == 200
         assert response.is_json
-        json = response.getjson()
-        assert "timeline_post" in json
-        assert len(json["timeline_post"]) == 0
+        json = response.get_json()
+        assert "timeline_posts" in json
+        assert len(json["timeline_posts"]) == 0
 
         def test_malformed_timeline_post(self):
             response = self.client.post("/api/timeline_post", data={"email": "john@example.com", "content": "this is a test"})
